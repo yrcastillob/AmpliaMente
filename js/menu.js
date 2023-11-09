@@ -9,6 +9,7 @@ var menu = function(){
     var navbar_items = document.getElementById("navbar_items");
     var navbar_toggle_close = document.getElementById("navbar_toggle_close");
     var navbar_toggle_open = document.getElementById("navbar_toggle_open");
+    var navbar_logoSmall = document.getElementById("navbar_logoSmall")
     estadoMenu = !estadoMenu;
 
     if (estadoMenu == true) {
@@ -20,6 +21,7 @@ var menu = function(){
         navbar_toggle_open.style.display = "none";
         navbar_toggle_close.style.display = "block";
         navbar_toggle_close.style.margin = "1rem";
+        navbar_logoSmall.style.display = "block"
     } else {
         navbar.style.flexFlow = "row wrap";
         navbar_items.style.display = "none";
@@ -27,5 +29,6 @@ var menu = function(){
         navbar_buttons.style.display = "none";
         navbar_toggle_open.style.display = "block";
         navbar_toggle_close.style.display = "none";
+        navbar_logoSmall.style.display = "none"
     }
 }
