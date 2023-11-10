@@ -14,7 +14,7 @@ var menu = function(){
 
     if (estadoMenu == true) {
         navbar.style.flexFlow = "column-reverse";
-        navbar_items.style.display = "flex";
+        navbar_items.style.display = "block";
         navbar_items.style.flexDirection = "row wrap"
         navbar_logoContainer.style.display = "none";
         navbar_buttons.style.display = "block";
